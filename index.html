@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TEMPS ESPIRAL</title>
+<style>
+* { margin: 0; padding: 0; }
+html {
+	height: 100%;
+}
+body {
+	color: #fff;
+	font-size: 60px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+background-image: url(https://66.media.tumblr.com/cb4e7e85baeb58fb9218d327caa95502/d6cb82c2275f098f-12/s400x600/a22f99a340baba8bd69cc12ee8f5ed1d944d4ea9.jpg);
+	background-size: cover;
+	background-position: 50% 0;
+	height: 100%;
+	text-align: center;
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+<main>
+	<header>
+
+	</header>
+
+
+	<div class=""> T҉E҉M҉P҉S҉ ҉E҉S҉P҉I҉R҉A҉L҉
+</div>
+	<div class=""> <a href="demo10/index.html"> PROBA 1</a> </div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="jquery.ripples.js"></script>
+<script>
+$(document).ready(function() {
+	try {
+		$('body').ripples({
+			resolution: 700,
+			dropRadius: 15, //px
+			perturbance: 0.04,
+		});
+
+	}
+	catch (e) {
+		$('.error').show().text(e);
+	}
+
+	// Automatic drops
+	setInterval(function() {
+		var $el = $('main');
+		var x = Math.random() * $el.outerWidth();
+		var y = Math.random() * $el.outerHeight();
+		var dropRadius = 15;
+		var strength = 0.07 + Math.random() * 0.04;
+
+		$el.ripples('drop', x, y, dropRadius, strength);
+	}, 400);
+});
+</script>
+</body>
+</html>
