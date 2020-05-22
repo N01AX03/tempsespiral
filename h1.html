@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TEMPS ESPIRAL</title>
+
+    <style>
+      <style > * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-size: 25px;
+        background-image: url("https://66.media.tumblr.com/04ce2f20f0049cdda6a5d3c47da41b73/17bda2be5ce50596-81/s1280x1920/a91368b305b107651c94db032d6fc15e963bb1e6.jpg");
+
+        background-size: 100%;
+        background-position: 50% 0;
+        height: 100%;
+        text-align: center;
+      }
+
+      .container {
+        padding-top: 100vh;
+      }
+
+      div.fullimg {
+        /* Optional - fixed on screen */
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        /* Full sized */
+        width: 100%;
+        height: 100vh;
+        /* Dark background */
+        background: rgba(0, 0, 0, 0);
+      }
+      div.fullimg img {
+        width: 100%;
+        height: 100%;
+      }
+
+      div.password {
+        display: flex;
+        z-index: 999;
+        color: white;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fullimg">
+      <img
+        src="https://66.media.tumblr.com/04ce2f20f0049cdda6a5d3c47da41b73/17bda2be5ce50596-81/s1280x1920/a91368b305b107651c94db032d6fc15e963bb1e6.jpg"
+      />
+    </div>
+
+    <div class="password">
+      <form>
+        <label for="pswd">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+          explicabo modi accusantium maiores fuga illum ullam sit, fugiat totam
+          obcaecati quae sapiente aliquid, commodi nesciunt tempore minus quasi
+          sint aliquam?</label
+        >
+        <div>
+          <input type="password" id="pswd" />
+          <input type="button" value="Submit" onclick="checkPswd();" />
+        </div>
+      </form>
+    </div>
+    <div class="container"></div>
+
+    <script type="text/javascript">
+      function checkPswd() {
+        var confirmPassword = "u";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+          alert("Contrasenya incorrecta");
+        } else {
+          window.location = "h2.html";
+        }
+      }
+    </script>
+  </body>
+</html>

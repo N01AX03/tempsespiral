@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="AAAAAaAAAAAaaaAA aAAAAA aAAAAA aAA" />
+    <meta name="robots" content="index,follow" />
+    <title>Document</title>
+    <link rel="stylesheet" href="" />
+    <link rel="icon" href="/img/icon.ico" />
+    <style>
+                                    h1 {
+                                      color: red;
+                                    }
+                                    p {
+                                      color: blue;
+                                    }
+
+                                    div.fixed {
+
+                            padding: 10px 0;
+                                      text-align: center;
+                                      position: fixed;
+                                      left: 50%;
+                                      top: 50%;
+                                      transform: translate(-50%, -50%);
+                                    }
+
+                                    div.fixx {
+
+            padding: 10px 0;
+                      text-align: center;
+                      position: fixed;
+                      left: 50%;
+                      top: 50%;
+                      transform: translate(-50%, -50%);
+                    }
+
+                    div.fixx img{
+                      pointer-events: none;
+      user-select: none;
+      opacity:0.5;
+                      width: 100vw;
+                      height: 100vh;
+                      z-index: inherit bottom;;
+
+
+                    }
+
+                                    div.fixed img {
+
+                                      border-radius: 50%;
+
+                                width: 50%;
+
+                        background-color: white;
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    </style>
+  </head>
+
+  <body>
+    <!--Títols, text, imatges i vídeo. primers passos-->
+
+    <h1>Hola!</h1>
+
+    <div class="fixed">
+      <h2>AAAAaAAAA</h2>
+      <img width="300" height="200" src="/img/kittens.jpg" alt="kittens" />
+      <video autoplay width="300" height="200" src="/img/octopus.mp4"></video>
+    </div>
+
+    <div class="fixx">
+      <p>HOLAs</p>
+      <img
+        width="300"
+        height="200"
+        src="https://i264.photobucket.com/albums/ii176/animaorkut/flores/flor115.gif"
+        alt="kittens"
+      />
+    </div>
+    <img width="300" height="200" src="/img/kittens.jpg" alt="kittens" />
+    <video autoplay width="300" height="200" src="/img/octopus.mp4"></video>
+
+    <h3>Hola!</h3>
+    <h4>Hola!</h4>
+    <a target="_blank" href="https://youtu.be/NbGxOucRKv4">
+      <img src="/img/icon.ico" alt="icon" />
+    </a>
+    <h5>Hola!</h5>
+    <h6>Hola!</h6>
+
+    <p>Hola! Hola! Hola! Hola!</p>
+    <p>Hola!<i> Hola! Hola!</i> Hola!</p>
+    <p>Hola!<small> Hola! Hola!</small> Hola!</p>
+    <p>Hola!<mark> Hola! Hola!</mark> Hola!</p>
+    <p>Hola!<del> Hola! Hola!</del> Hola!</p>
+
+    <!--FORMA PER FORMULARI: INPUTS, SUBMIT, ...-->
+    <h4>e-mail</h4>
+
+    <form autocomplete="on" action="/img/kittens.jpg">
+      <label>1</label>
+      <input type="radio" name="products" value="1" />
+      <label>2</label>
+      <input type="radio" name="products" value="2" />
+      <label>3</label>
+      <input type="radio" name="products" value="3" />
+      <label>5</label>
+      <input type="radio" name="products" value="5" />
+      <label>4</label>
+      <input type="radio" name="products" value="4" />
+      <label for="user">Username</label>
+      <input
+        autofocus
+        maxlength="3"
+        minlength="4"
+        name="user"
+        type="text"
+        id="user"
+        placeholder="www.google.com"
+        required
+      />
+      <label>Email</label>
+      <input name="email" type="email" required />
+
+      <select name="products" id="product">
+        <option value="">Opció 1</option>
+        <option value="">Opció 2</option>
+        <option value="">Opció 3</option>
+        <option value="">Opció 4</option>
+        <option value="">Opció 5</option>
+      </select>
+      <textarea name="message" id="message" cols="1" rows="1"></textarea>
+
+      <button type="submit">submit</button>
+    </form>
+
+    <!--TAULA mOLT BONIC!!-->
+    <h1>Taula</h1>
+
+    <table>
+      <tr>
+        <th>AAA</th>
+        <th>
+          <video autoplay width="50" height="30" src="/img/octopus.mp4"></video>
+        </th>
+        <th>bbb</th>
+        <th>live</th>
+        <th><img width="50" height="30" src="img/kittens.jpg" alt="" /></th>
+      </tr>
+      <tr>
+        <th><img width="50" height="30" src="img/kittens.jpg" alt="" /></th>
+        <td>laught</td>
+        <td><mark> eee</mark></td>
+        <td>EEE</td>
+        <td>fff</td>
+      </tr>
+      <tr>
+        <th>AAA</th>
+        <th>bbb</th>
+        <th><img width="50" height="30" src="img/kittens.jpg" alt="" /></th>
+        <th>CCC</th>
+        <th><del>AAA</del></th>
+      </tr>
+      <tr>
+        <td>ddd</td>
+        <th><img width="50" height="30" src="img/kittens.jpg" alt="" /></th>
+        <td>EEE</td>
+        <td><i>love</i></td>
+        <td>fff</td>
+      </tr>
+    </table>
+
+    <!--LLISTES: PODEN SER OL (1,2,3,4,) UL (. . . .)-->
+    <h2>Lists</h2>
+    <ol>
+      <li><a href="/img/kittens.jpg">Home</a></li>
+      <ol>
+        <li>Home</li>
+        <ol>
+          <li>Home</li>
+          <li>Contact</li>
+          <li>Projects</li>
+        </ol>
+
+        <li>Contact</li>
+        <li>Projects</li>
+      </ol>
+
+      <li>Contact</li>
+      <li>Projects</li>
+    </ol>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, ipsa.
+      Omnis, mollitia. Sapiente blanditiis necessitatibus vel rerum dolore
+      dolores! Veritatis vero in possimus.
+    </p>
+
+    <!--BOTÓ A PAGINA 2-->
+    <a href="/index2.html"> <button>Click! (pag2)</button></a>
+  </body>
+</html>
